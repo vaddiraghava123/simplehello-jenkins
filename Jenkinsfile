@@ -11,7 +11,7 @@ pipeline {
                 
             }
         }
-        stage('Build docker image') {
+        stage('Docker hub login') {
             steps {
                 script{
                     bat "docker build -t vaddiraghava123/spring-hello-integration ."
